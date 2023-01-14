@@ -9,11 +9,12 @@ c = 2.99792*(10**10)
 k = 1.3805*(10**(-16))
 pi = np.pi
 exp = np.exp
+inf = np.inf
 T = [10, 100, 1000]
 
 #INPUT JUMLAH PARTISI
 dl_arr = []
-interval = ([0, 10], [100, 110], [1000, 1010], [0, np.inf])
+interval = ([0, 10], [100, 110], [1000, 1010], [0, inf])
 n = int(input("Input jumlah partisi: "))
 while (n % 2 != 0):
     print("Jumlah partisi harus merupakan bilangan genap!")
