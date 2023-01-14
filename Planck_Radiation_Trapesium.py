@@ -24,12 +24,12 @@ for i in range(len(interval)):
 f_arr = [[] for x in interval]
 print("\nPERHITUNGAN ATURAN TRAPESIUM")
 
-for i in range(len(f_arr)):
+for i in range(len(interval)):
     for j in range(len(T)):
         f = (2*pi*h*(c**2)) / ((dl_arr[i]**(5))*(exp((h*c)/(k*dl_arr[i]*T[j]))-1))
         f_arr[i].append(f)
 
-for i in range(len(f_arr)):
+for i in range(len(interval)):
     print("\nInterval \u03BB {}".format(str(interval[i])))
     
     for j in range(len(T)):
